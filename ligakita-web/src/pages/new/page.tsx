@@ -61,7 +61,7 @@ export function NewTournamentPage() {
             return;
         }
 
-        history.push("/123", formValues);
+        history.push("/info/123", formValues);
     }
 
     return <div className="container mx-auto w-1/3 min-w-max shadow-sm border-2 p-3 my-3">
