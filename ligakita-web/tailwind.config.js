@@ -1,18 +1,18 @@
 module.exports = {
-  purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
+  purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
       minHeight: {
-       '1/10': '10%',
+        "1/10": "10%",
       },
     },
   },
   variants: {
     extend: {
-      borderColor: ['active'],
-      backgroundColor: ['active'],
+      borderColor: ["active"],
+      backgroundColor: ["active"],
     },
   },
   plugins: [],
-}
+};
