@@ -1,0 +1,33 @@
+scalar Time
+
+type Player {
+  uid: ID!
+  name: String!
+}
+
+type Match {
+  uid: ID!
+  name: String!
+  score1: String
+  score2: String
+  player1: Player!
+  player2: Player!
+  scheduledOn: Time!
+  startedOn: Time
+  completedOn: Time
+}
+
+type TournamentInfo {
+  uid: ID!
+  name: String!
+  players: [Player!]!
+  matches: [Match!]!
+}
+
+type Query {
+  tournament(uid: ID!): TournamentInfo!
+}
+
+type Mutation {
+  newTournament(name: String!, players: [String!]!): TournamentInfo!
+}
